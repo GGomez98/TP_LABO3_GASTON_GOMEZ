@@ -6,12 +6,17 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
     background-image: url("images/header.jpg");
-    background-size: cover;
-    height: 100vh;
+    background-position: 30% 35%;
+    height: 70vh;
     background-repeat: no-repeat;
     color: white;
     display: flex;
@@ -28,8 +33,8 @@ nav{
     display: flex;
     justify-content: flex-end;
     width: 73vw;
-    padding: 3% 0% 0% 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 10vh;
+    align-items: center;
 }
 
 .item-menu{
@@ -47,21 +52,24 @@ h1{
     margin-left: 3%;
     width: 35vw;
     line-height: 200%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 section{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 h2{
     width: 100%;
     text-align: center;
     font-weight: lighter;
     margin-top: 3%;
+    font-size: 200%;
+}
+
+h3{
+    font-size: 150%;
 }
 
 .info{
@@ -78,14 +86,15 @@ p{
 
 .mid-section{
     height: 50vh;
+    text-align: left;
+    padding-left: 3%;
+    align-items: center;
     background-image: url("./images/encuentra.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: white;
-    text-align: left;
     justify-content: left;
-    padding-left: 3%;
-    align-items: center;
 }
 
 .mid-section h2{
@@ -113,4 +122,20 @@ nav a{
 
 .mid-h2{
     width: 50%;
+}
+
+footer{
+    display: flex;
+    background-color: #333333;
+    font-weight: lighter;
+    color: white;
+    align-items: center;
+}
+
+footer nav{
+    justify-content: flex-start;
+}
+footer p{
+    text-align: end;
+    margin-right: 3%;
 }
