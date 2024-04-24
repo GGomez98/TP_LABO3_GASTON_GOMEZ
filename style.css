@@ -37,6 +37,15 @@ nav{
     align-items: center;
 }
 
+nav a{
+    background-color: transparent;
+    height: 80%;
+}
+
+nav a:hover{
+    background-color: rgba(223, 223, 223, 0.248);
+}
+
 .item-menu{
     margin-left: 2%;
 }
@@ -44,6 +53,10 @@ nav{
 a{
     color: white;
     text-decoration: none;
+}
+
+a:hover{
+    background-color: #b56c06;
 }
 
 h1{
@@ -195,12 +208,75 @@ a{
     
 }
 
-nav a{
-    background-color: transparent;
+.mid-div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: start;
 }
 
-.mid-h2{
+#blog{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog{
+    display: flex;
+    height: 30%;
+    margin: 2%;
+}
+
+.blog img{
     width: 50%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.blog .separador{
+    width: 40%;
+    border: 3px solid #71B100;
+    margin: 3% 0% 5% 0%;
+}
+
+.blog .datos-blog{
+    width: 50%;
+    height: 100%;
+}
+
+.fecha-y-autor{
+    display: flex;
+    width: 100%;
+}
+
+
+.comentario{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #71B100;
+    color: white;
+    margin: 2%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.comentario p{
+    width: 100%;
+    font-size: 200%;
+}
+
+.comentario #com-text{
+    font-weight: 100;
+    width: 90%;
+}
+
+.comentario img{
+    width: 10%;
+    height: 10%;
+}
+
+.comentario #com-aut{
+    font-weight: 500;
+    text-align: right;
 }
 
 footer{
