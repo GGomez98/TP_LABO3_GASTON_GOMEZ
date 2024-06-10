@@ -6,7 +6,7 @@ let viviendas = [
     {
         id: 1,
         titulo: "Casa de Lujo en el Lago",
-        imagen : "../images/anuncio1.jpg",
+        imagen : "images/anuncio1.jpg",
         descripcion: "Casa en el lago con excelente vista, acabados de lujo a un excelente precio",
         precio: 350000,
         banios:3,
@@ -16,7 +16,7 @@ let viviendas = [
     {
         id: 1,
         titulo: "Casa terminados de lujo",
-        imagen : "../images/anuncio2.jpg",
+        imagen : "images/anuncio2.jpg",
         descripcion: "Casa con diseño moderno, así como tecnología inteligente y amueblada",
         precio: 275000,
         banios:3,
@@ -26,7 +26,7 @@ let viviendas = [
     {
         id: 1,
         titulo: "Casa con Pileta",
-        imagen : "../images/anuncio3.jpg",
+        imagen : "images/anuncio3.jpg",
         descripcion: "Casa con pileta y acabados de lujo en la ciudad, excelente oportunidad",
         precio: 250000,
         banios:3,
@@ -45,14 +45,14 @@ let comentarios = [
 let blogs = [
     {
         titulo: "Terraza en el techo de tu casa",
-        img: "../images/blog1.jpg",
+        img: "images/blog1.jpg",
         fecha: "20/10/2019",
         autor: "Admin",
         descripcion: "Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero"
     },
     {
         titulo: "Guía para la decoración de tu hogar",
-        img: "../images/blog2.jpg",
+        img: "images/blog2.jpg",
         fecha: "20/10/2019",
         autor: "Admin",
         descripcion: "Maximiza el espacio de tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio" 
@@ -98,13 +98,13 @@ function cargarPropiedades(propiedades){
         precio.classList = "precio";
         cuartos.id = "cuartos";
         detBanios.classList= "cuartos";
-        iconBanios.src = "../images/icono_wc.svg";
+        iconBanios.src = "images/icono_wc.svg";
         cantBanios.textContent = element.banios;
         detGarage.classList= "cuartos";
-        iconGarage.src = "../images/icono_estacionamiento.svg";
+        iconGarage.src = "images/icono_estacionamiento.svg";
         cantGarage.textContent = element.garages;
         detDorm.classList= "cuartos"
-        iconDorm.src = "../images/icono_dormitorio.svg";
+        iconDorm.src = "images/icono_dormitorio.svg";
         cantDorm.textContent = element.habitaciones;
         verPropiedad.textContent = "Ver Propiedad";
         verPropiedad.href="";
@@ -138,7 +138,7 @@ function cargarComentarios(lista){
         let comilla = document.createElement('img')
 
         comentario.classList = 'comentario';
-        comilla.src = '../images/comilla.svg';
+        comilla.src = 'images/comilla.svg';
         comText.id = 'com-text'
         comAutor.id = 'com-aut'
         comText.textContent = element.comentario;
