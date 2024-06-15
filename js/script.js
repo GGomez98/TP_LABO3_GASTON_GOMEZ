@@ -89,10 +89,11 @@ function cargarPropiedades(propiedades){
         let cantDorm = document.createElement("p");
 
         detalles.className = 'casa-detalles'
-        casa.className = 'casa';
+        casa.className = 'casa card';
         casa.id = element.id;
         foto.src = element.imagen;
         nombre.textContent = element.titulo;
+        nombre.classList = 'card-title'
         descripcion.textContent = element.descripcion;
         precio.textContent = `U$S${element.precio}`;
         precio.classList = "precio";
@@ -107,6 +108,7 @@ function cargarPropiedades(propiedades){
         iconDorm.src = "images/icono_dormitorio.svg";
         cantDorm.textContent = element.habitaciones;
         verPropiedad.textContent = "Ver Propiedad";
+        verPropiedad.classList = 'text-decoration-none text-white'
         verPropiedad.href="";
 
         cuartos.appendChild(detBanios);
